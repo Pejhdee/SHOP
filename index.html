@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DroneShop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header_inner">
+                <img src="logo/logo.png">
+            </div>
+            <nav class="nav">
+                <a class="nav-link" href="#fpv-products">Дрони FPV</a>
+                <a class="nav-link" href="#parts">Комплектуючі</a>
+                <a class="nav-link" href="#contacts">Контактна інформація</a>
+            </nav>
+        </div>
+    </header>
+<img class="main-image" src="images/Drone.png" alt="Main Content Image">
+<div class="block"></div>
+<section class="title1" id="fpv-products">
+    <h2>Дрони FPV</h2>
+    <div class="block-2"></div>
+    <div class="products" id="products-container">
+    </div>
+</section>
+<section class="title2" id="accessories">
+    <h2>Комплектуючі</h2>
+    <div class="block-2"></div>
+    <div class="products" id="products-container_2">
+    </div>
+    </section>
+    <div id="cart-overlay">
+        <div id="cart-container">
+            <div id="cart-items"></div>
+            <button id="cart-close">Закрити</button>
+        </div>
+    </div>
+<div id="order-modal" style="display: none;">
+    <div class="order-modal-content">
+        <h2>Оформлення замовлення</h2>
+        <form id="order-form">
+            <label for="name">Ім'я</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Електронна пошта</label>
+            <input type="text" id="phone" name="phone">
+            <label for="email">Номер телефона</label>
+            <input type="email" id="email" name="email">
+            <label for="adress">Адреса доставки</label>
+            <input type="text" id="adress" name="adress">
+            <button type="submit" id="order-confirm">Оформити замовлення</button>
+            <button type="button" id="order-cancel">Скасувати замовлення</button>
+        </form>
+    </div>
+</div>
+<footer id="contacts">
+    <div class="footer-content">
+        <p>&copy;2026 DroneShop. Усі права захищені</p>
+        <p>Контактна інформація: +380123456789</p>
+    </div>
+</footer>
+</body>
+</html>
